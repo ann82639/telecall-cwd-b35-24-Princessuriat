@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/d8e61b520c.js" crossorigin="anonymous"></script>
+
+<!-- font awesome cdnjs -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- for fonts size and texture -->
+     <link rel="stylesheet" href="style.css">
+
+
+    <title>Bini</title>
+</head>
+<body style="background-image: url(images/bg.jpeg);">
+    <nav class="cyan lighten-3 nav-extended">
+        <div class="container">
+            <div class="nav-wrapper">
+              <a href="binifinal.html" 
+              class="brand-logo"><img src="images/bini-logo.jpg" alt=""></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="images.html">About</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="articles.html">Article</a></li>
+                <li><a href="https://store.abs-cbn.com/">Shop</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="images.html">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="articles.html">Article</a></li>
+        <li><a href="https://store.abs-cbn.com/">Shop</a></li>
+      </ul>
+<!-- Slider -->
+<div class="slider">
+    <ul class="slides">
+        <li> <img src="images/cover.jpg" alt=""> </li>
+        <li> <img src="images/biniiii7.jpg" alt=""> </li>
+        <li> <img src="images/allthem.jpg" alt=""> </li>
+        <li> <img src="images/BINI x Sunsilk.jpeg" alt=""> </li>
+        <li> <img src="images/7c265c37-e862-45b9-adc2-3353b59125c3.jpeg" alt=""> </li>
+        <li> <img src="images/salamin.jpg" alt=""> </li>
+        <li> <img src="images/salamin2.jpg" alt=""> </li>
+        <li> <img src="images/06.jpg" alt=""> </li>
+    </ul>
+</div>         
+
+<!-- footer -->
+<footer class=" page-footer grey">
+<div class="container grey">
+    <div class="row grey">
+<h4 class="center"> <a href="https://www.instagram.com/bini_ph/#" class="traget=_blank"> <i class="fa-brands fa-instagram white-text"></i>
+</a>
+
+    <a href="https://www.facebook.com/BINIph.official/" class="brand logo traget=_blank"> <i class="fa-brands fa-facebook white-text"></i>
+    </a>
+    <a href="https://www.tiktok.com/@bini_ph" class="brand logo traget=_blank white-text"> <i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="https://open.spotify.com/artist/7tNO3vJC9zlHy2IJOx34ga" class="brand logo traget=_blank"> <i class="fa-brands fa-spotify white-text"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UCtOcDBKgyr-f50SgbMErFkQ" class="brand logo traget=_blank"> <i class="fa-brands fa-youtube white-text"></i>
+    </a>
+</h4>
+        <div class="footer-copyright grey"> 
+            <div class="container center"> Developed by: Princes Uriat</div>
+        </div>
+</div>
+</footer>
+
+
+     <!-- jquery CDN, para sa pag zoomin and out ng picture or media-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+
+    <!-- mismong code pang zoom in and out the media -->
+    <script>
+      $(document).ready(function(){
+         // materialbox init
+         $('.materialboxed').materialbox({
+            inDuration: 800,
+            outDuration: 500
+         });
+         // Slider init
+         $('.slider').slider({
+            indicators: false,
+            height: 800
+         });
+
+         $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+      });
+    </script>
+</body>
+</html>
